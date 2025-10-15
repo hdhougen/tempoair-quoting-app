@@ -1,0 +1,43 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tempo Air — Quoting App</title>
+    <style>
+      :root{--bg:#0b1220;--card:#ffffff;--muted:#6b7280;--primary:#1c3c6b;--accent:#f59e0b;--highlight:#fff7d6;}
+      body{margin:0;background:#f3f4f6;color:#111827;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;}
+      .container{max-width:1200px;margin:0 auto;padding:16px;}
+      .topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;}
+      .title{font-size:1.25rem;font-weight:700;color:var(--primary)}
+      .panel{background:white;border-radius:12px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.07)}
+      .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+      .row-title{margin:10px 4px;font-size:.9rem;color:#374151;font-weight:600}
+      .card{background:var(--card);border-radius:12px;padding:14px;box-shadow:0 1px 2px rgba(0,0,0,.06);border:1px solid #e5e7eb;display:flex;flex-direction:column;gap:8px;position:relative;}
+      .badge{position:absolute;top:10px;right:10px;background:var(--accent);color:white;font-size:.75rem;padding:4px 8px;border-radius:999px;}
+      .badge.gold{background:#d97706}
+      .name{font-weight:700;color:#111827}
+      .stars{color:#f59e0b;font-size:.9rem}
+      .price{font-size:1.6rem;font-weight:800}
+      .muted{color:var(--muted);font-size:.85rem}
+      .list{margin:0;padding-left:18px;color:#111827}
+      .btn{background:#1c3c6b;color:white;border:none;border-radius:8px;padding:10px 12px;cursor:pointer;font-weight:700}
+      .btn.secondary{background:#1118270d;color:#1c3c6b;border:1px solid #c7d2fe}
+      .highlight{background:var(--highlight)}
+      .card.emphasis{transform:scale(1.02);box-shadow:0 6px 14px rgba(28,60,107,.18);border-color:#c7d2fe}
+      .grid-2rows{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+      .footer{display:flex;justify-content:flex-end;gap:8px;margin-top:12px}
+      @media (max-width:900px){.grid,.grid-2rows{grid-template-columns:1fr}}
+      .promo{background:#ecfeff;border:1px dashed #06b6d4;color:#0e7490;font-size:.8rem;padding:6px;border-radius:8px}
+      .section{margin-top:16px}
+      .toolbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+      select,input[type="checkbox"]{padding:8px;border:1px solid #e5e7eb;border-radius:8px}
+      .divider{height:1px;background:#e5e7eb;margin:12px 0}
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
